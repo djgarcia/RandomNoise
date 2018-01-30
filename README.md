@@ -12,6 +12,9 @@ val noise = 20 //(in percentage)
 
 // Data must be cached in order to improve the performance
 
-val noisyData = new RandomNoise(trainingData, noise).runNoise()
+val noisyModel = new RandomNoise(trainingData, // RDD[LabeledPoint]
+                                noise) // Percentage of noise
+                                
+val noisyData = noisyModel.runNoise()
 
 ```
