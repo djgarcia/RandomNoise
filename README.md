@@ -6,7 +6,7 @@ This package introduces class noise randomly into an RDD.
 
 
 ```scala
-import org.apache.spark.mllib.feature._
+import org.apache.spark.mllib.util._
 
 val noise = 20 //(in percentage)
 
